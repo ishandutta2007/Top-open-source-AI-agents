@@ -12,7 +12,7 @@ A curated list of the most popular open-source AI agents on GitHub, ranked by th
 | [MetaGPT](https://github.com/geekan/MetaGPT) | An AI agent that can code, test, and self-debug, acting as an AI dev assistant. | 63K |
 | [Huginn](https://github.com/huginn/huginn) | An open-source automation tool that allows users to run agents on their own servers to collect information from the web and trigger actions based on conditions. | 48K |
 | [BabyAGI](https://github.com/yoheinakajima/babyagi) | One of the earliest recursive task agents, it creates, prioritizes, and completes tasks in a loop based on a goal. | 22K |
-| [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | An AI agent framework specialized for deep research tasks, capable of planning workflows, scraping information, and generating research reports with citations. | N/A |
-| [LangChain](https://github.com/langchain-ai/langchain) | A framework for chaining LLM calls, tools, and memory into agent flows, making it easy to create customizable, multi-tool AI agents. | N/A |
-| [OpenDevin](https://github.com/OpenDevin/OpenDevin) | An open-source coding agent that works like an AI dev assistant, writing code, running it in an isolated environment, and iterating automatically. | N/A |
-| [AgentVerse](https://github.com/OpenBMB/AgentVerse) | A multi-agent simulation platform for experimenting with agent cooperation, competition, and communication in interactive environments. | N/A |
+| [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | An AI agent framework specialized for deep research tasks, capable of planning workflows, scraping information, and generating research reports with citations. | 24K |
+| [LangChain](https://github.com/langchain-ai/langchain) | A framework for chaining LLM calls, tools, and memory into agent flows, making it easy to create customizable, multi-tool AI agents. | 124K |
+| [OpenDevin](https://github.com/OpenDevin/OpenDevin) | An open-source coding agent that works like an AI dev assistant, writing code, running it in an isolated environment, and iterating automatically. | 66K |
+| [AgentVerse](https://github.com/OpenBMB/AgentVerse) | A multi-agent simulation platform for experimenting with agent cooperation, competition, and communication in interactive environments. | 5K |
