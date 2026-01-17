@@ -5,10 +5,10 @@ A curated list of the most popular open-source AI agents on GitHub, ranked by th
 | Agent Name | Description | Stars |
 | --- | --- | --- |
 | [Open Interpreter](https://github.com/openinterpreter/open-interpreter) | An AI agent that can execute code, browse the web, and interact with your computer to complete tasks. | 61K |
-| [AgentGPT](https://github.com/reworkd/AgentGPT) | Allows users to configure and deploy AI agents directly in the browser without complex setup, enabling them to achieve goals through a "think-act-learn" process. | N/A |
-| [AutoGen](https://github.com/microsoft/autogen) | A framework by Microsoft for developing LLM applications with multiple conversational agents that can collaborate to solve tasks and interact with humans. | N/A |
-| [Crew AI](https://github.com/crewAIInc/crewAI) | A framework for orchestrating role-playing autonomous AI agents, fostering collaborative intelligence for complex tasks with features like role-based agent design. | N/A |
-| [Dify](https://github.com/langgenius/dify) | An open-source LLM application development platform that combines a visual interface, RAG workflows, agent capabilities, and model management to build and deploy AI applications. | N/A |
+| [AgentGPT](https://github.com/reworkd/AgentGPT) | Allows users to configure and deploy AI agents directly in the browser without complex setup, enabling them to achieve goals through a "think-act-learn" process. | 35K |
+| [AutoGen](https://github.com/microsoft/autogen) | A framework by Microsoft for developing LLM applications with multiple conversational agents that can collaborate to solve tasks and interact with humans. | 53K |
+| [Crew AI](https://github.com/crewAIInc/crewAI) | A framework for orchestrating role-playing autonomous AI agents, fostering collaborative intelligence for complex tasks with features like role-based agent design. | 42K |
+| [Dify](https://github.com/langgenius/dify) | An open-source LLM application development platform that combines a visual interface, RAG workflows, agent capabilities, and model management to build and deploy AI applications. | 126K |
 | [MetaGPT](https://github.com/geekan/MetaGPT) | An AI agent that can code, test, and self-debug, acting as an AI dev assistant. | N/A |
 | [Huginn](https://github.com/huginn/huginn) | An open-source automation tool that allows users to run agents on their own servers to collect information from the web and trigger actions based on conditions. | N/A |
 | [BabyAGI](https://github.com/yoheinakajima/babyagi) | One of the earliest recursive task agents, it creates, prioritizes, and completes tasks in a loop based on a goal. | N/A |
