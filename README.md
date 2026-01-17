@@ -4,7 +4,7 @@ A curated list of the most popular open-source AI agents on GitHub, ranked by th
 
 | Agent Name | Description | Stars |
 | --- | --- | --- |
-| [Open Interpreter](https://github.com/open-interpreter/open-interpreter) | An AI agent that can execute code, browse the web, and interact with your computer to complete tasks. | N/A |
+| [Open Interpreter](https://github.com/openinterpreter/open-interpreter) | An AI agent that can execute code, browse the web, and interact with your computer to complete tasks. | 61K |
 | [AgentGPT](https://github.com/reworkd/AgentGPT) | Allows users to configure and deploy AI agents directly in the browser without complex setup, enabling them to achieve goals through a "think-act-learn" process. | N/A |
 | [AutoGen](https://github.com/microsoft/autogen) | A framework by Microsoft for developing LLM applications with multiple conversational agents that can collaborate to solve tasks and interact with humans. | N/A |
 | [Crew AI](https://github.com/crewAIInc/crewAI) | A framework for orchestrating role-playing autonomous AI agents, fostering collaborative intelligence for complex tasks with features like role-based agent design. | N/A |
