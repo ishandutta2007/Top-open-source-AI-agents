@@ -16,3 +16,11 @@ A curated list of the most popular open-source AI agents on GitHub, ranked by th
 | [LangChain](https://github.com/langchain-ai/langchain) 🔗 | A framework for chaining LLM calls, tools, and memory into agent flows, making it easy to create customizable, multi-tool AI agents. | 124K |
 | [OpenDevin](https://github.com/OpenDevin/OpenDevin) 👨‍💻 | An open-source coding agent that works like an AI dev assistant, writing code, running it in an isolated environment, and iterating automatically. | 66K |
 | [AgentVerse](https://github.com/OpenBMB/AgentVerse) 🌌 | A multi-agent simulation platform for experimenting with agent cooperation, competition, and communication in interactive environments. | 5K |
+
+
+
+### ✨ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/Top-open-source-AI-agents&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Top-open-source-AI-agents&type=date&legend=top-left)
+
+
