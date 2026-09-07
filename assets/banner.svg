@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a16" />
+      <stop offset="50%" stop-color="#111129" />
+      <stop offset="100%" stop-color="#070711" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="orbGlow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="orbGlow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="orbGlow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Drop Shadows / Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="slightGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Embedded CSS Animation -->
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-8px) rotate(1.5deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes pulseGlow2 {
+        0%, 100% { opacity: 0.25; transform: scale(1.05); }
+        50% { opacity: 0.55; transform: scale(0.95); }
+      }
+      @keyframes dashMove {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes nodeBlink {
+        0%, 100% { opacity: 0.3; r: 3; }
+        50% { opacity: 1; r: 5; }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(-100px); opacity: 0; }
+        50% { opacity: 0.15; }
+        100% { transform: translateY(340px); opacity: 0; }
+      }
+      @keyframes badgeShimmer {
+        0%, 100% { filter: drop-shadow(0 0 4px rgba(99,102,241,0.4)); }
+        50% { filter: drop-shadow(0 0 12px rgba(236,72,153,0.7)); }
+      }
+      .floating {
+        animation: floatSlow 6s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .pulsing-1 {
+        animation: pulseGlow 7s ease-in-out infinite alternate;
+        transform-origin: 200px 100px;
+      }
+      .pulsing-2 {
+        animation: pulseGlow2 8s ease-in-out infinite alternate;
+        transform-origin: 1000px 220px;
+      }
+      .circuit-line {
+        stroke-dasharray: 8 6;
+        animation: dashMove 15s linear infinite;
+      }
+      .circuit-line-fast {
+        stroke-dasharray: 6 4;
+        animation: dashMove 9s linear infinite reverse;
+      }
+      .node-1 { animation: nodeBlink 3s ease-in-out infinite; }
+      .node-2 { animation: nodeBlink 2.5s ease-in-out 0.8s infinite; }
+      .node-3 { animation: nodeBlink 3.2s ease-in-out 1.5s infinite; }
+      .shimmer-badge { animation: badgeShimmer 4s ease-in-out infinite; }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -1px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+      }
+      .tag-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+      }
+    </style>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Outer Border Stroke -->
+  <rect width="1198" height="318" x="1" y="1" rx="15" fill="none" stroke="url(#accentGrad)" stroke-width="1.5" stroke-opacity="0.35" />
+
+  <!-- Ambient Glow Circles -->
+  <ellipse class="pulsing-1" cx="200" cy="100" rx="260" ry="180" fill="url(#orbGlow1)" />
+  <ellipse class="pulsing-2" cx="1020" cy="220" rx="280" ry="200" fill="url(#orbGlow2)" />
+  <circle cx="600" cy="160" r="190" fill="url(#orbGlow3)" opacity="0.18" />
+
+  <!-- Tech Grid Network -->
+  <g opacity="0.18" stroke="#6366f1" stroke-width="0.75">
+    <line x1="100" y1="0" x2="100" y2="320" stroke-dasharray="3 6" />
+    <line x1="300" y1="0" x2="300" y2="320" stroke-dasharray="3 6" />
+    <line x1="600" y1="0" x2="600" y2="320" stroke-dasharray="3 6" />
+    <line x1="900" y1="0" x2="900" y2="320" stroke-dasharray="3 6" />
+    <line x1="1100" y1="0" x2="1100" y2="320" stroke-dasharray="3 6" />
+    <line x1="0" y1="80" x2="1200" y2="80" stroke-dasharray="3 6" />
+    <line x1="0" y1="160" x2="1200" y2="160" stroke-dasharray="3 6" />
+    <line x1="0" y1="240" x2="1200" y2="240" stroke-dasharray="3 6" />
+  </g>
+
+  <!-- Circuit Neural Lines (Left side) -->
+  <g fill="none" opacity="0.55">
+    <path class="circuit-line" d="M 40 80 L 120 80 L 170 130 L 220 130" stroke="#6366f1" stroke-width="1.5" />
+    <path class="circuit-line-fast" d="M 60 260 L 140 260 L 190 210 L 250 210" stroke="#06b6d4" stroke-width="1.5" />
+    <path class="circuit-line" d="M 20 170 L 90 170 L 130 210" stroke="#a855f7" stroke-width="1.2" />
+
+    <!-- Circuit Nodes -->
+    <circle class="node-1" cx="220" cy="130" r="4" fill="#818cf8" filter="url(#slightGlow)" />
+    <circle class="node-2" cx="250" cy="210" r="4" fill="#38bdf8" filter="url(#slightGlow)" />
+    <circle class="node-3" cx="170" cy="130" r="3.5" fill="#c084fc" />
+    <circle class="node-1" cx="120" cy="80" r="3" fill="#818cf8" />
+    <circle class="node-2" cx="140" cy="260" r="3.5" fill="#38bdf8" />
+  </g>
+
+  <!-- Circuit Neural Lines (Right side) -->
+  <g fill="none" opacity="0.55">
+    <path class="circuit-line-fast" d="M 1160 90 L 1080 90 L 1030 140 L 960 140" stroke="#ec4899" stroke-width="1.5" />
+    <path class="circuit-line" d="M 1140 240 L 1060 240 L 1000 190 L 940 190" stroke="#a855f7" stroke-width="1.5" />
+    <path class="circuit-line-fast" d="M 1180 160 L 1100 160 L 1060 120" stroke="#06b6d4" stroke-width="1.2" />
+
+    <!-- Right Circuit Nodes -->
+    <circle class="node-2" cx="960" cy="140" r="4" fill="#f472b6" filter="url(#slightGlow)" />
+    <circle class="node-1" cx="940" cy="190" r="4" fill="#c084fc" filter="url(#slightGlow)" />
+    <circle class="node-3" cx="1030" cy="140" r="3.5" fill="#38bdf8" />
+    <circle class="node-2" cx="1060" cy="240" r="3" fill="#f472b6" />
+  </g>
+
+  <!-- Central Robot / AI Agent Icon with floating animation -->
+  <g class="floating">
+    <!-- Icon Backdrop Glow -->
+    <circle cx="600" cy="90" r="40" fill="#6366f1" opacity="0.22" filter="url(#glow)" />
+    <circle cx="600" cy="90" r="34" fill="#13132e" stroke="url(#accentGrad)" stroke-width="2" />
+    
+    <!-- Stylized Bot Emblem -->
+    <g transform="translate(581, 71)">
+      <!-- Antennas -->
+      <line x1="19" y1="4" x2="19" y2="10" stroke="#a855f7" stroke-width="2" stroke-linecap="round" />
+      <circle cx="19" cy="3" r="2.5" fill="#ec4899" />
+      <!-- Head / Face -->
+      <rect x="5" y="10" width="28" height="21" rx="6" fill="#1e1e42" stroke="#818cf8" stroke-width="1.8" />
+      <!-- Visor -->
+      <rect x="9" y="15" width="20" height="9" rx="3" fill="#0f172a" />
+      <!-- Eyes with Glow -->
+      <circle cx="14" cy="19.5" r="2" fill="#38bdf8">
+        <animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="24" cy="19.5" r="2" fill="#38bdf8">
+        <animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <!-- Smile / Status line -->
+      <line x1="15" y1="27" x2="23" y2="27" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round" />
+      <!-- Ears -->
+      <rect x="2" y="16" width="3" height="7" rx="1.5" fill="#6366f1" />
+      <rect x="33" y="16" width="3" height="7" rx="1.5" fill="#6366f1" />
+    </g>
+  </g>
+
+  <!-- Tag / Status Pill -->
+  <g class="shimmer-badge" transform="translate(600, 150)">
+    <rect x="-115" y="-12" width="230" height="24" rx="12" fill="#1e1b4b" fill-opacity="0.8" stroke="#818cf8" stroke-width="1" stroke-opacity="0.6" />
+    <circle cx="-95" cy="0" r="4" fill="#10b981">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="5" y="4" text-anchor="middle" class="tag-text" font-size="11" fill="#c7d2fe">CURATED AWESOME LIST</text>
+  </g>
+
+  <!-- Main Title -->
+  <g transform="translate(600, 206)">
+    <!-- Main Gradient Title -->
+    <text text-anchor="middle" class="title-text" font-size="38" fill="url(#accentGrad)" filter="url(#slightGlow)">
+      Top Open-Source AI Agents
+    </text>
+  </g>
+
+  <!-- Subtitle / Mission -->
+  <g transform="translate(600, 244)">
+    <text text-anchor="middle" class="subtitle-text" font-size="15.5" fill="#94a3b8">
+      Autonomous Frameworks • Multi-Agent Systems • LLM Developers • Ranked by Stargazers
+    </text>
+  </g>
+
+  <!-- Bottom Chips / Badges Row -->
+  <g transform="translate(600, 282)">
+    <!-- Badge 1: AutoGPT -->
+    <g transform="translate(-240, 0)">
+      <rect x="-48" y="-10" width="96" height="20" rx="10" fill="#181830" stroke="#4338ca" stroke-width="0.9" />
+      <text x="0" y="3.5" text-anchor="middle" class="tag-text" font-size="10" fill="#a5b4fc">🧠 AutoGPT</text>
+    </g>
+    <!-- Badge 2: Dify -->
+    <g transform="translate(-130, 0)">
+      <rect x="-42" y="-10" width="84" height="20" rx="10" fill="#181830" stroke="#4338ca" stroke-width="0.9" />
+      <text x="0" y="3.5" text-anchor="middle" class="tag-text" font-size="10" fill="#a5b4fc">🎨 Dify</text>
+    </g>
+    <!-- Badge 3: Langflow -->
+    <g transform="translate(-25, 0)">
+      <rect x="-48" y="-10" width="96" height="20" rx="10" fill="#181830" stroke="#4338ca" stroke-width="0.9" />
+      <text x="0" y="3.5" text-anchor="middle" class="tag-text" font-size="10" fill="#a5b4fc">⚡ Langflow</text>
+    </g>
+    <!-- Badge 4: OpenHands -->
+    <g transform="translate(85, 0)">
+      <rect x="-50" y="-10" width="100" height="20" rx="10" fill="#181830" stroke="#4338ca" stroke-width="0.9" />
+      <text x="0" y="3.5" text-anchor="middle" class="tag-text" font-size="10" fill="#a5b4fc">👨‍💻 OpenHands</text>
+    </g>
+    <!-- Badge 5: CrewAI -->
+    <g transform="translate(195, 0)">
+      <rect x="-46" y="-10" width="92" height="20" rx="10" fill="#181830" stroke="#4338ca" stroke-width="0.9" />
+      <text x="0" y="3.5" text-anchor="middle" class="tag-text" font-size="10" fill="#a5b4fc">👥 CrewAI</text>
+    </g>
+    <!-- Badge 6: browser-use -->
+    <g transform="translate(305, 0)">
+      <rect x="-52" y="-10" width="104" height="20" rx="10" fill="#181830" stroke="#4338ca" stroke-width="0.9" />
+      <text x="0" y="3.5" text-anchor="middle" class="tag-text" font-size="10" fill="#a5b4fc">🌐 browser-use</text>
+    </g>
+  </g>
+</svg>

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.svg" alt="Top Open-Source AI Agents Banner" width="100%" />
+</p>
+
 # 🚀 Top Open-Source AI Agents 🤖
 
 A curated list of the most popular open-source AI agents on GitHub, ranked by the number of stargazers. This list is a valuable resource for researchers, developers, and anyone interested in the exciting field of autonomous AI agents and LLM applications.
