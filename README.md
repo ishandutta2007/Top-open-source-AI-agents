@@ -4,18 +4,26 @@ A curated list of the most popular open-source AI agents on GitHub, ranked by th
 
 | Agent Name | Description | Stars |
 | --- | --- | --- |
-| [Open Interpreter](https://github.com/openinterpreter/open-interpreter) 💻 | An AI agent that can execute code, browse the web, and interact with your computer to complete tasks. | 61K |
-| [AgentGPT](https://github.com/reworkd/AgentGPT) 🌐 | Allows users to configure and deploy AI agents directly in the browser without complex setup, enabling them to achieve goals through a "think-act-learn" process. | 35K |
-| [AutoGen](https://github.com/microsoft/autogen) 🤖 | A framework by Microsoft for developing LLM applications with multiple conversational agents that can collaborate to solve tasks and interact with humans. | 53K |
-| [Crew AI](https://github.com/crewAIInc/crewAI) 👨‍👩‍👧‍👦 | A framework for orchestrating role-playing autonomous AI agents, fostering collaborative intelligence for complex tasks with features like role-based agent design. | 42K |
-| [Dify](https://github.com/langgenius/dify) 🎨 | An open-source LLM application development platform that combines a visual interface, RAG workflows, agent capabilities, and model management to build and deploy AI applications. | 126K |
-| [MetaGPT](https://github.com/geekan/MetaGPT) 🛠️ | An AI agent that can code, test, and self-debug, acting as an AI dev assistant. | 63K |
-| [Huginn](https://github.com/huginn/huginn) 🐦 | An open-source automation tool that allows users to run agents on their own servers to collect information from the web and trigger actions based on conditions. | 48K |
-| [BabyAGI](https://github.com/yoheinakajima/babyagi) 👶 | One of the earliest recursive task agents, it creates, prioritizes, and completes tasks in a loop based on a goal. | 22K |
-| [GPT Researcher](https://github.com/assafelovic/gpt-researcher) 🕵️‍♂️ | An AI agent framework specialized for deep research tasks, capable of planning workflows, scraping information, and generating research reports with citations. | 24K |
-| [LangChain](https://github.com/langchain-ai/langchain) 🔗 | A framework for chaining LLM calls, tools, and memory into agent flows, making it easy to create customizable, multi-tool AI agents. | 124K |
-| [OpenDevin](https://github.com/OpenDevin/OpenDevin) 👨‍💻 | An open-source coding agent that works like an AI dev assistant, writing code, running it in an isolated environment, and iterating automatically. | 66K |
-| [AgentVerse](https://github.com/OpenBMB/AgentVerse) 🌌 | A multi-agent simulation platform for experimenting with agent cooperation, competition, and communication in interactive environments. | 5K |
+| [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) 🧠 | An autonomous open-source AI agent that attempts to achieve user-defined goals through multi-step task execution and internet access. | 187K |
+| [Dify](https://github.com/langgenius/dify) 🎨 | An open-source LLM application development platform combining visual interfaces, RAG pipelines, agent capabilities, and orchestration. | 154K |
+| [Langflow](https://github.com/langflow-ai/langflow) ⚡ | A dynamic, visual drag-and-drop framework for building, testing, and deploying multi-agent workflows and LLM applications. | 154K |
+| [LangChain](https://github.com/langchain-ai/langchain) 🔗 | A foundational framework for chaining LLM calls, memory, and tools into composable, multi-tool AI agents. | 146K |
+| [browser-use](https://github.com/browser-use/browser-use) 🌐 | An open-source framework enabling autonomous AI agents to interact with web browsers, click, scroll, and complete web tasks. | 112K |
+| [OpenHands](https://github.com/All-Hands-AI/OpenHands) 👨‍💻 | Formerly OpenDevin, an open-source autonomous AI software developer capable of writing code, running tests, and fixing bugs. | 85K |
+| [MetaGPT](https://github.com/geekan/MetaGPT) 🛠️ | A multi-agent framework incorporating human SOPs to assign roles (product manager, architect, engineer) to agents for end-to-end software development. | 69K |
+| [Open Interpreter](https://github.com/openinterpreter/open-interpreter) 💻 | A natural language interface that executes Python, JavaScript, Bash, and more locally on your machine with terminal access. | 68K |
+| [AutoGen](https://github.com/microsoft/autogen) 🤖 | A framework by Microsoft for developing multi-agent LLM applications where agents converse and collaborate to solve complex tasks. | 61K |
+| [CrewAI](https://github.com/crewAIInc/crewAI) 👨‍👩‍👧‍👦 | A framework for orchestrating collaborative, role-playing autonomous AI agents for structured and intelligent team workflows. | 58K |
+| [gpt-engineer](https://github.com/AntonOsika/gpt-engineer) 👷 | An AI agent that builds entire codebases and software projects from a natural language prompt, asking clarifying questions as needed. | 55K |
+| [LlamaIndex](https://github.com/run-llama/llama_index) 🦙 | A data framework for LLM applications providing data ingestion, vector indexing, and agentic query engines over private data. | 52K |
+| [Huginn](https://github.com/huginn/huginn) 🐦 | An open-source system for building automated agents that monitor online events, scrape web data, and trigger real-time actions. | 50K |
+| [LangGraph](https://github.com/langchain-ai/langgraph) 🕸️ | A low-level orchestration library for building controllable, stateful, multi-agent systems with cyclic execution and human-in-the-loop support. | 41K |
+| [AgentGPT](https://github.com/reworkd/AgentGPT) 🌐 | A browser-based platform allowing users to configure and deploy autonomous AI agents with recursive goal execution. | 36K |
+| [Composio](https://github.com/ComposioHQ/composio) 🔌 | An integration platform and tool-calling infrastructure providing 250+ tools, authentication, and actions for AI agents. | 30K |
+| [GPT Researcher](https://github.com/assafelovic/gpt-researcher) 🕵️‍♂️ | An autonomous agent framework specialized for comprehensive online research, gathering sources, filtering bias, and producing detailed reports. | 29K |
+| [BabyAGI](https://github.com/yoheinakajima/babyagi) 👶 | One of the pioneering recursive task agents, creating, prioritizing, and completing tasks iteratively based on an objective. | 22K |
+| [SuperAGI](https://github.com/TransformerOptimus/SuperAGI) 🚀 | An open-source autonomous AI framework to build, manage, and run autonomous agents with concurrent execution and graphical dashboard. | 18K |
+| [AgentVerse](https://github.com/OpenBMB/AgentVerse) 🌌 | A multi-agent simulation framework for exploring cooperation, competition, and emergent social behavior among LLM agents. | 5K |
 
 
 
